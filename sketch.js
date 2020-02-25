@@ -161,22 +161,22 @@ function drawFace() {
   //head
   noStroke();
   fill(242, 223, 199);
-  circle(200, 200, 200);
+  circle(width * .5, height * .5, width * .5);
   //ear
   noStroke();
   fill(242, 223, 199);
-  circle(100, 230, 50);
+  circle(width * .25, height * .575, width * .125);
   //left eye
   fill(51, 30, 3);
-  circle(140, 230, 20);
+  circle(width * .35, height * .575, width * .05);
   //right eye
   fill(51, 30, 3);
-  circle(260, 230, 20);
+  circle(width * .65, height * .575, width * .05);
   //mouth
   stroke(0);
-  line(210, 250, 200, 260);
+  line(width * .525, height * .625, width * .5, height * .65);
   stroke(0);
-  line(200, 260, 190, 250);
+  line(width * .5, height * .65, width * .475, height * .625);
 }
 function drawFrontHair() {
   //top mid hair
@@ -237,11 +237,11 @@ function drawEyebrows() {
   //left
   stroke(0);
   strokeWeight(5);
-  line(120, 200, 130, 190);
+  line(width * .28, height * .5, width * .315, height * .475);
   //right
   stroke(0);
   strokeWeight(5);
-  line(275, 190, 285, 200);
+  line(width * .68, height * .475, width * .715, height * .5);
 }
 
 //micLevel embedded in the shapes of "cat"
